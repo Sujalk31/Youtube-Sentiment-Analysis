@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fee440;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/faded.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 200px;
+}
+
+.content {
+    text-align: left;
+    padding: 20px;
+    color: rgb(54, 8, 54);
+    animation: moveup 0.5s ease-in-out forwards;
+}
+
+.content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+nav {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-delay: 0.5s;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px;
+    background: linear-gradient(45deg, rgb(79, 16, 79), rgb(208, 109, 208));
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 252, 252);
+    font-weight: 30%;
+    font-size:15px;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.button.anim {
+    animation-delay: 1.5s;
+}
+
+#button {
+    display: inline-block;
+    margin: 10px 0;
+    width: 250px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid rgb(79, 16, 79);
+    border-radius: 10px;
+    text-decoration: none;
+    background: linear-gradient(90deg, rgb(79, 16, 79), rgb(208, 109, 208));
+    transition: all 0.3s ease-in-out;
+}
+
+#button:hover {
+    width: 255px;
+    height: 50px;
+    box-shadow: 5px 5px 5px rgba(95, 85, 85, 0.6);
+}
+
+.img {
+    position: absolute;
+    width: 400px;
+    bottom: 20px;
+    right: 20px;
+    height: 350px;
+    animation-delay: 2s;
+}
+
+.links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links a img.icon {
+    display: inline-block;
+    height: 1em;
+    margin: 0 0 -0.1em 0.3em;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+.content p{
+    font-weight: 15%;
+    font-size: 15px;
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation-fill-mode: forwards;
+  }
+  
+  .button.anim {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation-fill-mode: forwards;
+  }
+  
+  

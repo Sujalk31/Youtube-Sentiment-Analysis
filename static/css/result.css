@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(images/faded.jpg);
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-size: cover;
+    background-position:center;
+    background-clip: border-box;
+    padding:5px 5px;
+    text-align: center;
+    align-items: center;
+}
+ h4{
+    margin: 5px 10px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation-delay: 1.5s;
+    color: rgb(54, 8, 54);
+}
+
+
+h3{
+    margin-top: 3px;
+    color: rgb(54, 8, 54);
+
+}
+h2{
+    font-family: Tahoma, sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    animation-delay: 0.5s;
+    color: rgb(54, 8, 54);
+}
+.out{
+    margin:  50px 20px;
+
+}
+#output{
+    margin: 5px 5px;
+    border: 3px solid black;
+    overflow-y: scroll;
+    animation-delay: 1s;
+    box-shadow: 5px 5px #5f5555;
+}
+a{
+    color:black;
+}
+.pagination {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* Styles for pagination links */
+.on{
+    text-decoration: none;
+    color: #080000;
+    background-color: #8d83b9;
+    border: 1px solid #101752;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.on:hover {
+    background-color: #08073b;
+    color: #fff;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    background-color: #fee440;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/faded.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 200px;
+}
+
+.content {
+    text-align: left;
+    padding: 20px;
+    color: rgb(54, 8, 54);
+    animation: moveup 0.5s ease-in-out forwards;
+}
+
+.content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+nav {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation-delay: 0.5s;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px;
+    background: linear-gradient(45deg, rgb(79, 16, 79), rgb(208, 109, 208));
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 252, 252);
+    font-weight: 30%;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.button.anim {
+    animation-delay: 1.5s;
+}
+
+#button {
+    display: inline-block;
+    margin: 10px 0;
+    width: 250px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid rgb(79, 16, 79);
+    border-radius: 10px;
+    text-decoration: none;
+    background: linear-gradient(90deg, rgb(79, 16, 79), rgb(208, 109, 208));
+    transition: all 0.3s ease-in-out;
+}
+
+#button:hover {
+    width: 255px;
+    height: 50px;
+    box-shadow: 5px 5px 5px rgba(95, 85, 85, 0.6);
+}
+
+.img {
+    position: absolute;
+    width: 450px;
+    bottom: 5px;
+    right: 10px;
+    box-shadow: 5px 5px rgba(95, 85, 85, 0.6);
+}
+
+.links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links a img.icon {
+    display: inline-block;
+    height: 1em;
+    margin: 0 0 -0.1em 0.3em;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+#pie{
+    display: inline-block;
+    margin: 10px 0;
+    width: 250px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid rgb(79, 16, 79);
+    border-radius: 10px;
+    text-decoration: none;
+    background: linear-gradient(90deg, rgb(79, 16, 79), rgb(208, 109, 208));
+    transition: all 0.3s ease-in-out;
+}
+#pie:hover{
+    width: 255px;
+    height: 50px;
+    box-shadow: 5px 5px 5px rgba(95, 85, 85, 0.6);
+}
+
+.dil {
+    position: absolute;
+    width: 200px;
+    bottom: 310px;
+    left: 10px;
+    height: 150px;
+    animation-delay: 2s;
+}
+
+.anghota {
+    position: absolute;
+    width: 200px;
+    bottom: 310px;
+    right: 10px;
+    height: 150px;
+    animation-delay: 2s;
+}
+
+.photo {
+    position: absolute;
+    width: 230px;
+    bottom: 10px;
+    left: 10px;
+    height: 150px;
+    animation-delay: 2s;
+}
+
+.dil2 {
+    position: absolute;
+    width: 200px;
+    bottom: 10px;
+    right: 10px;
+    height: 150px;
+    animation-delay: 2s;
+}
+
