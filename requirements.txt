@@ -1,0 +1,4 @@
+Flask==2.2.2
+vaderSentiment==3.3.2
+google-api-python-client==2.99.0
+matplotlib==3.7.1
